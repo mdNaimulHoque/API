@@ -7,10 +7,19 @@
 </head>
 <body>
     <h1>JSON</h1>
-    <h2>JavaScript Object NOtation.</h2>
+    <h2>JavaScript Object Notation.</h2>
 
     <script>
-        const user = {id: 245, name: "Masud"};
+        const user = {
+            id: 245, 
+            name: "Masud",
+            lover:{
+                name: "Jamila",
+                favFood: "pizza"
+            }, 
+            friendsAge: [12, 45, 67],
+            friends:['Kamal', 'Jamal', 'Samal'] 
+            };
         // {"id": 245, "name": "Masud"};
         const userJSON = JSON.stringify(user);
         console.log(userJSON);
